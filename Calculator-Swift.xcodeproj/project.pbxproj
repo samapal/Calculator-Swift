@@ -97,12 +97,9 @@
 		6BBCD1051CD38CCB00FE3C79 /* Calculator-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				6BBCD1061CD38CCB00FE3C79 /* AppDelegate.swift */,
+				6BBCD1341CD38DA900FE3C79 /* SystemFiles */,
 				6BBCD1081CD38CCB00FE3C79 /* ViewController.swift */,
 				6BBCD10A1CD38CCB00FE3C79 /* Main.storyboard */,
-				6BBCD10D1CD38CCB00FE3C79 /* Assets.xcassets */,
-				6BBCD10F1CD38CCB00FE3C79 /* LaunchScreen.storyboard */,
-				6BBCD1121CD38CCB00FE3C79 /* Info.plist */,
 			);
 			path = "Calculator-Swift";
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				6BBCD1281CD38CCC00FE3C79 /* Info.plist */,
 			);
 			path = "Calculator-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		6BBCD1341CD38DA900FE3C79 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6BBCD1061CD38CCB00FE3C79 /* AppDelegate.swift */,
+				6BBCD10D1CD38CCB00FE3C79 /* Assets.xcassets */,
+				6BBCD10F1CD38CCB00FE3C79 /* LaunchScreen.storyboard */,
+				6BBCD1121CD38CCB00FE3C79 /* Info.plist */,
+			);
+			name = SystemFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
