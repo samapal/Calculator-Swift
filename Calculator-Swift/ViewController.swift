@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func pressButton(sender: UIButton) {
-        let digit: String? = sender.currentTitle
+        let digit = sender.currentTitle!
         print("touched \(digit) button")
     }
     override func viewDidLoad() {
