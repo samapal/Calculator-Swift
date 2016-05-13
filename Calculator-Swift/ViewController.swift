@@ -9,10 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var isTheMiddleTyping = false
+    
+    @IBOutlet weak var calcdisplay: UILabel!
+    
     @IBAction func pressButton(sender: UIButton) {
         let digit = sender.currentTitle!
         print("touched \(digit) button")
+        let temporarydigit = calcdisplay.text!
+        if isTheMiddleTyping {
+            calcdisplay.text = temporarydigit + digit
+        }
+        else {
+             calcdisplay.text = digit
+        }
+        
+        isTheMiddleTyping = true
+
+        
+    }
+    @IBAction func launchOperation(sender: AnyObject) {
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
