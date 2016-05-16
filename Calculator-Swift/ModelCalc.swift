@@ -15,7 +15,27 @@ class CalculatorImpimantation {
     func setOperand (operand:Double){
        accumulator = operand
     }
+    
+    var operations:Dictionary<String,operation> = [
+     "Pi": operation.Constant,
+     "e" : operation.Constant,
+     "√" : operation.UnaryOperation,
+     "cos": operation.UnaryOperation
+    ]
+    
+    enum operation {
+        case Constant
+        case UnaryOperation
+        case BinaryOperation
+        case Equals
+        
+    }
+    
     func perfomOperation (symbol: String){
+        
+        if let constant = operations[symbol]{
+            accumulator=constant
+        }
         switch symbol {
           case "Pi": accumulator = M_PI
           case "√": accumulator = sqrt(accumulator)
