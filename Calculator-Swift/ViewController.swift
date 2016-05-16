@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var isTheMiddleTyping = false
+    private var isTheMiddleTyping = false
     
-    @IBOutlet weak var calcdisplay: UILabel!
+    @IBOutlet private weak var calcdisplay: UILabel!
     
-    @IBAction func pressButton(sender: UIButton) {
+    @IBAction private func pressButton(sender: UIButton) {
         let digit = sender.currentTitle!
         print("touched \(digit) button")
         let temporarydigit = calcdisplay.text!
@@ -29,17 +29,31 @@ class ViewController: UIViewController {
 
         
     }
-    @IBAction func launchOperation(sender: AnyObject) {
+    
+    private var displayValue : Double {
+        get {
+            return Double(calcdisplay.text!)!
+        }
+        set {
+            calcdisplay.text = String(newValue)
+            
+        }
+    }
+    
+    private var calculator:CalculatorImpimantation = CalculatorImpimantation()
+    
+    
+    @IBAction private func launchOperation(sender: AnyObject) {
+        if isTheMiddleTyping {
+            calculator.setOperand(displayValue)
+        }
+        if let operation = sender.currentTitle {
+         calculator.perfomOperation(operation!)
+          displayValue = calculator.result
+        }
+        isTheMiddleTyping = false
+            
         
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

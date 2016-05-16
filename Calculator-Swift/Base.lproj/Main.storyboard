@@ -127,7 +127,7 @@
                                     <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43C-kC-hr5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjO-dn-YxE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IjO-dn-YxE">
                                 <rect key="frame" x="20" y="28" width="263" height="55"/>
                                 <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -137,12 +137,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hl4-B7-YEu">
                                 <rect key="frame" x="19" y="91" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
                                 <state key="normal" title="Pi">
                                     <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmk-Dy-jLm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r0-zv-MjN">
+                                <rect key="frame" x="19" y="159" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="42"/>
+                                <state key="normal" title="√">
+                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4I-px-oiw"/>
                                 </connections>
                             </button>
                         </subviews>
