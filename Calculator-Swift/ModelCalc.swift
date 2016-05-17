@@ -16,16 +16,16 @@ class CalculatorImpimantation {
        accumulator = operand
     }
     
-    var operations:Dictionary<String,operation> = [
-     "Pi": operation.Constant,
-     "e" : operation.Constant,
-     "√" : operation.UnaryOperation,
-     "cos": operation.UnaryOperation
+    var operations:Dictionary<String,Operation> = [
+     "Pi": Operation.Constant(M_PI),
+     "e" : Operation.Constant(M_E),
+     "√" : Operation.UnaryOperation(sqrt),
+     "cos": Operation.UnaryOperation(cos)
     ]
     
-    enum operation {
-        case Constant
-        case UnaryOperation
+    enum Operation {
+        case Constant(Double)
+        case UnaryOperation((Double)->Double)
         case BinaryOperation
         case Equals
         
@@ -33,14 +33,16 @@ class CalculatorImpimantation {
     
     func perfomOperation (symbol: String){
         
-        if let constant = operations[symbol]{
-            accumulator=constant
+        if let oper = operations[symbol]{
+            switch oper {
+            case .Constant(let assotiatedValue): accumulator = assotiatedValue
+            case .UnaryOperation(let unaryfunc): accumulator = 
+            case .BinaryOperation: break
+            case .Equals: break
+            }
         }
-        switch symbol {
-          case "Pi": accumulator = M_PI
-          case "√": accumulator = sqrt(accumulator)
-        default: break
-        }
+
+        
         
     }
     
