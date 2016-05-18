@@ -22,6 +22,7 @@ class CalculatorImplimantation {
      "√" : Operation.UnaryOperation(sqrt),
      "cos": Operation.UnaryOperation(cos),
      "C": Operation.Constant(0.0),
+     "±": Operation.UnaryOperation({-$0}),
      "×": Operation.BinaryOperation({$0*$1}),
      "−": Operation.BinaryOperation({ $0-$1 }),
      "÷": Operation.BinaryOperation({$0/$1}),
