@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private var calculator:CalculatorImpimantation = CalculatorImpimantation()
+    private var calculator:CalculatorImplimantation = CalculatorImplimantation()
     
     
     @IBAction private func launchOperation(sender: AnyObject) {

@@ -7,24 +7,8 @@
 //
 
 import Foundation
-private func multiply(op1:Double, op2:Double)->Double{
-    return op1*op2
-}
 
-private func minus(op1:Double, op2:Double)->Double{
-    return op1-op2
-}
-private func divide(op1:Double, op2:Double)->Double{
-    return op1/op2
-}
-
-private func plus(op1:Double, op2:Double)->Double{
-    return op1+op2
-}
-
-
-
-class CalculatorImpimantation {
+class CalculatorImplimantation {
 
     private var accumulator:Double = 0.0
     
@@ -38,10 +22,10 @@ class CalculatorImpimantation {
      "√" : Operation.UnaryOperation(sqrt),
      "cos": Operation.UnaryOperation(cos),
      "C": Operation.Constant(0.0),
-     "×": Operation.BinaryOperation(multiply),
-     "−": Operation.BinaryOperation(minus),
-     "÷": Operation.BinaryOperation(divide),
-     "+": Operation.BinaryOperation(plus),
+     "×": Operation.BinaryOperation({$0*$1}),
+     "−": Operation.BinaryOperation({ $0-$1 }),
+     "÷": Operation.BinaryOperation({$0/$1}),
+     "+": Operation.BinaryOperation({$0+$1}),
      "=": Operation.Equals
     ]
     
