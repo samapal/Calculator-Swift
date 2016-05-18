@@ -222,17 +222,6 @@
                                     <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTo-6d-036"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1k-W4-Mlo">
-                                <rect key="frame" x="20" y="229" width="60" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="42"/>
-                                <state key="normal" title="√">
-                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4j-23-47k"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-C6-s0D">
                                 <rect key="frame" x="87" y="365" width="63" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
