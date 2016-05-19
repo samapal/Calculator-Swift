@@ -18,11 +18,16 @@ class ViewController: UIViewController {
         let digit = sender.currentTitle!
         print("touched \(digit) button")
         let temporarydigit = calcdisplay.text!
+
         if isTheMiddleTyping {
             calcdisplay.text = temporarydigit + digit
+           
+            if ((digit==".")&&(temporarydigit.characters.count<=1)){calcdisplay.text = temporarydigit + digit}
         }
         else {
-             calcdisplay.text = digit
+            if (digit == ".") {calcdisplay.text = "0."}
+            else {
+                calcdisplay.text = digit}
         }
         
         isTheMiddleTyping = true

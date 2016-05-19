@@ -27,7 +27,9 @@ class CalculatorImplimantation {
      "−": Operation.BinaryOperation({ $0-$1 }),
      "÷": Operation.BinaryOperation({$0/$1}),
      "+": Operation.BinaryOperation({$0+$1}),
-     "=": Operation.Equals
+     "=": Operation.Equals,
+     "%": Operation.UnaryOperation({$0/100}),
+     "sin": Operation.UnaryOperation(sin)
     ]
     
     enum Operation {
