@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private var isTheMiddleTyping = false
+    private var isDotPressed = false
     
     @IBOutlet private weak var calcdisplay: UILabel!
     
@@ -22,10 +23,19 @@ class ViewController: UIViewController {
         if isTheMiddleTyping {
             calcdisplay.text = temporarydigit + digit
            
-            if ((digit==".")&&(temporarydigit.characters.count<=1)){calcdisplay.text = temporarydigit + digit}
+            if (digit==".") {
+                
+                if isDotPressed {
+                   calcdisplay.text = temporarydigit
+                }
+                isDotPressed=true
+            
+              }
         }
         else {
-            if (digit == ".") {calcdisplay.text = "0."}
+            if (digit == ".") {
+                isDotPressed = true
+                calcdisplay.text = "0."}
             else {
                 calcdisplay.text = digit}
         }
@@ -57,6 +67,7 @@ class ViewController: UIViewController {
           displayValue = calculator.result
         }
         isTheMiddleTyping = false
+        isDotPressed=false
             
         
     }
