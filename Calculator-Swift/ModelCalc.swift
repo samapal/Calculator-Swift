@@ -76,6 +76,10 @@ class CalculatorImplimantation {
         
     }
     
+    typealias PropertyList = AnyObject
+    
+    var program:PropertyList
+    
     var result : Double {
         get{
             return accumulator
