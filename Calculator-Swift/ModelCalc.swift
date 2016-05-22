@@ -17,6 +17,17 @@ class CalculatorImplimantation {
         internalProgram.append(operand)
     }
     
+    func setOperand (variableName:String){
+      //  variableValues
+        
+        variableValues[variableName]=accumulator
+        print(variableValues[variableName])
+    }
+    
+    private var variableValues: Dictionary<String,Double> = [:]
+    
+    var memory:Double=0.0
+    
     var operations:Dictionary<String,Operation> = [
      "Pi": Operation.Constant(M_PI),
      "e" : Operation.Constant(M_E),
@@ -97,10 +108,12 @@ class CalculatorImplimantation {
         }
     }
     
-    private func clear(){
+    func clear(){
         accumulator=0.0
         pending = nil
         internalProgram.removeAll()
+        memory=0.0
+      //  program.removeAllObjects()
     }
     
     var result : Double {

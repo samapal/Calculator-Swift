@@ -15,7 +15,28 @@ class ViewController: UIViewController {
     
     var savedProgram:CalculatorImplimantation.PropertyList?
     
-    
+
+    @IBAction func ExtractFromMemory(sender: AnyObject) {
+        displayValue = calculator.memory
+    }
+
+    @IBAction func AddToMemory() {
+        calculator.memory = displayValue
+        print(calculator.memory)
+        
+    }
+    @IBAction func SaveToX(sender: UIButton) {
+        if let variable = sender.currentTitle {
+            calculator.setOperand(displayValue)
+            calculator.setOperand(variable)
+        }
+    }
+    @IBAction func Clear() {
+        calculator.clear()
+        displayValue = calculator.result
+        isTheMiddleTyping = false
+        
+    }
     @IBAction func Save() {
         savedProgram = calculator.program
     }
