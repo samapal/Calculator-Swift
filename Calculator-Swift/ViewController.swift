@@ -13,6 +13,20 @@ class ViewController: UIViewController {
     private var isTheMiddleTyping = false
     private var isDotPressed = false
     
+    var savedProgram:CalculatorImplimantation.PropertyList?
+    
+    
+    @IBAction func Save() {
+        savedProgram = calculator.program
+    }
+    
+    @IBAction func restore() {
+        if savedProgram != nil {
+            calculator.program = savedProgram!
+            displayValue = calculator.result
+        }
+    }
+    
     @IBOutlet private weak var calcdisplay: UILabel!
     
     @IBAction private func pressButton(sender: UIButton) {
