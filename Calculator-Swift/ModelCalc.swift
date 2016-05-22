@@ -24,9 +24,21 @@ class CalculatorImplimantation {
         print(variableValues[variableName])
     }
     
+    func saveM (name:String, value:Double){
+        variableValues[name]=value
+    }
+    
+    func loadM (name:String)->Double{
+        if variableValues[name] != nil {
+        return variableValues[name]!
+        }
+        else {return 0.0}
+        
+    }
+    
     private var variableValues: Dictionary<String,Double> = [:]
     
-    var memory:Double=0.0
+    
     
     var operations:Dictionary<String,Operation> = [
      "Pi": Operation.Constant(M_PI),
@@ -112,7 +124,8 @@ class CalculatorImplimantation {
         accumulator=0.0
         pending = nil
         internalProgram.removeAll()
-        memory=0.0
+        
+        variableValues.removeAll()
       //  program.removeAllObjects()
     }
     

@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     
 
     @IBAction func ExtractFromMemory(sender: AnyObject) {
-        displayValue = calculator.memory
+        displayValue = calculator.loadM("M")
     }
 
     @IBAction func AddToMemory() {
-        calculator.memory = displayValue
-        print(calculator.memory)
+        calculator.saveM("M",value: displayValue)
+
         
     }
     @IBAction func SaveToX(sender: UIButton) {
