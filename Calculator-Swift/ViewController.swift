@@ -25,12 +25,22 @@ class ViewController: UIViewController {
 
         
     }
-    @IBAction func SaveToX(sender: UIButton) {
-        if let variable = sender.currentTitle {
-            calculator.setOperand(displayValue)
-            calculator.setOperand(variable)
+
+    
+    @IBAction func BackSpace() {
+        if isTheMiddleTyping {
+            switch (calcdisplay.text!).characters.count {
+            case 1:
+                displayValue = 0.0
+                isTheMiddleTyping=false
+            default:
+                calcdisplay.text = String((calcdisplay.text!).characters.dropLast())
+            }
+        } else if (displayValue == 0.0) {
+            displayValue = calculator.backspace()
         }
     }
+    
     @IBAction func Clear() {
         calculator.clear()
         displayValue = calculator.result

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -281,8 +281,30 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-6g-gLc">
                                         <rect key="frame" x="0.0" y="359" width="560" height="52"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2td-Bt-hXZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzn-dr-sHg">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="52"/>
+                                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="IS0-Fp-9Ch"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4h-xl-qAh">
+                                                <rect key="frame" x="143" y="0.0" width="132" height="52"/>
+                                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
+                                                <state key="normal" title="⊲">
+                                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="BackSpace" destination="BYZ-38-t0r" eventType="touchUpInside" id="CRb-5L-3Ns"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2td-Bt-hXZ">
+                                                <rect key="frame" x="285" y="0.0" width="133" height="52"/>
                                                 <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
                                                 <state key="normal" title="save">
@@ -292,19 +314,8 @@
                                                     <action selector="Save" destination="BYZ-38-t0r" eventType="touchUpInside" id="smu-7F-3fR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4h-xl-qAh">
-                                                <rect key="frame" x="143" y="0.0" width="132" height="52"/>
-                                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
-                                                <state key="normal" title="X">
-                                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="SaveToX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWs-gs-UJL"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-C6-s0D">
-                                                <rect key="frame" x="285" y="0.0" width="133" height="52"/>
+                                                <rect key="frame" x="428" y="0.0" width="132" height="52"/>
                                                 <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
                                                 <state key="normal" title="restore">
@@ -312,17 +323,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="restore" destination="BYZ-38-t0r" eventType="touchUpInside" id="mEw-EY-1f7"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzn-dr-sHg">
-                                                <rect key="frame" x="428" y="0.0" width="132" height="52"/>
-                                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
-                                                <state key="normal" title="C">
-                                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="Clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="IS0-Fp-9Ch"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -341,19 +341,8 @@
                                                     <action selector="AddToMemory" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMw-EO-z1G"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-op-1GN">
-                                                <rect key="frame" x="143" y="0.0" width="132" height="52"/>
-                                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
-                                                <state key="normal" title="sin">
-                                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFy-Cw-hqN"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-4p-uSe">
-                                                <rect key="frame" x="285" y="0.0" width="133" height="52"/>
+                                                <rect key="frame" x="143" y="0.0" width="132" height="52"/>
                                                 <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
                                                 <state key="normal" title="M">
@@ -361,6 +350,17 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="ExtractFromMemory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJx-CL-YaQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-op-1GN">
+                                                <rect key="frame" x="285" y="0.0" width="133" height="52"/>
+                                                <color key="backgroundColor" red="1" green="0.64584189970000005" blue="0.39432565790000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="40"/>
+                                                <state key="normal" title="sin">
+                                                    <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFy-Cw-hqN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-bi-GdT">

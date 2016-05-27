@@ -12,6 +12,8 @@ class CalculatorImplimantation {
     private var internalProgram = [AnyObject]()
     private var accumulator:Double = 0.0
     
+    var history = [Double]()
+    
     func setOperand (operand:Double){
        accumulator = operand
         internalProgram.append(operand)
@@ -27,6 +29,7 @@ class CalculatorImplimantation {
     func saveM (name:String, value:Double){
         variableValues[name]=value
     }
+    
     
     func loadM (name:String)->Double{
         if variableValues[name] != nil {
@@ -77,6 +80,7 @@ class CalculatorImplimantation {
                 pending = PendingBinaryOperations(binaryfunction: function, firstOperand: accumulator)
             case .Equals:
                 execPendingBinaryOperation()
+                
             }
         }
 
@@ -88,7 +92,17 @@ class CalculatorImplimantation {
         if pending != nil {
             accumulator = pending!.binaryfunction(pending!.firstOperand,accumulator)
             pending = nil
+            history.append(accumulator)
+            
         }
+    }
+    
+    func backspace() -> Double {
+        if history.count>=1 {
+           history.removeLast()
+            return history.last!
+        } else { return 0.0}
+        
     }
     
     private var pending:PendingBinaryOperations?
