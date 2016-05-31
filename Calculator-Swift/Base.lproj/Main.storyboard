@@ -389,7 +389,34 @@
                     </view>
                     <connections>
                         <outlet property="calcdisplay" destination="IjO-dn-YxE" id="NTf-Mx-stm"/>
-                        <outlet property="myButtons" destination="5ZA-jU-b7F" id="KU1-ga-SaZ"/>
+                        <outletCollection property="buttons" destination="ZnB-BI-m4I" collectionClass="NSMutableArray" id="KDb-Ev-jQi"/>
+                        <outletCollection property="buttons" destination="smv-wb-0Dv" collectionClass="NSMutableArray" id="Cms-pX-cv4"/>
+                        <outletCollection property="buttons" destination="5ZA-jU-b7F" collectionClass="NSMutableArray" id="ahw-yt-faX"/>
+                        <outletCollection property="buttons" destination="jF0-pi-PDQ" collectionClass="NSMutableArray" id="Qns-Te-cTh"/>
+                        <outletCollection property="buttons" destination="fUr-OQ-k2J" collectionClass="NSMutableArray" id="YNM-og-daX"/>
+                        <outletCollection property="buttons" destination="02d-Ot-31d" collectionClass="NSMutableArray" id="xYm-5z-52S"/>
+                        <outletCollection property="buttons" destination="P9U-zf-kaR" collectionClass="NSMutableArray" id="9Zw-60-4Gp"/>
+                        <outletCollection property="buttons" destination="hKK-61-1Rm" collectionClass="NSMutableArray" id="z03-rE-PBn"/>
+                        <outletCollection property="buttons" destination="qPt-B3-m9Y" collectionClass="NSMutableArray" id="j4X-ju-UCT"/>
+                        <outletCollection property="buttons" destination="6iL-ji-A51" collectionClass="NSMutableArray" id="hZC-V9-Oe8"/>
+                        <outletCollection property="buttons" destination="hC4-Tu-hE2" collectionClass="NSMutableArray" id="hz1-PU-swd"/>
+                        <outletCollection property="buttons" destination="lc1-J8-4BB" collectionClass="NSMutableArray" id="vEl-jE-GF4"/>
+                        <outletCollection property="buttons" destination="vdz-z3-OOG" collectionClass="NSMutableArray" id="7VU-FW-xAm"/>
+                        <outletCollection property="buttons" destination="WSn-Gp-tqZ" collectionClass="NSMutableArray" id="QGg-LV-2yl"/>
+                        <outletCollection property="buttons" destination="wwQ-p5-bYG" collectionClass="NSMutableArray" id="Mfn-cH-T20"/>
+                        <outletCollection property="buttons" destination="C4w-kp-pgT" collectionClass="NSMutableArray" id="8WS-UY-17w"/>
+                        <outletCollection property="buttons" destination="Vkq-Ws-dKg" collectionClass="NSMutableArray" id="ZL2-vd-HDW"/>
+                        <outletCollection property="buttons" destination="dVj-tq-VRT" collectionClass="NSMutableArray" id="XUR-ZI-LVl"/>
+                        <outletCollection property="buttons" destination="wDX-2Q-W9D" collectionClass="NSMutableArray" id="T42-5O-LJu"/>
+                        <outletCollection property="buttons" destination="hl4-B7-YEu" collectionClass="NSMutableArray" id="QgA-KE-dcs"/>
+                        <outletCollection property="buttons" destination="kZ1-C6-s0D" collectionClass="NSMutableArray" id="upa-mX-0pn"/>
+                        <outletCollection property="buttons" destination="2td-Bt-hXZ" collectionClass="NSMutableArray" id="eLH-i9-80d"/>
+                        <outletCollection property="buttons" destination="Uzn-dr-sHg" collectionClass="NSMutableArray" id="0Zp-sW-TwI"/>
+                        <outletCollection property="buttons" destination="q4h-xl-qAh" collectionClass="NSMutableArray" id="XOt-Qp-3Ro"/>
+                        <outletCollection property="buttons" destination="VGU-bi-GdT" collectionClass="NSMutableArray" id="Vvf-1E-Qti"/>
+                        <outletCollection property="buttons" destination="fKf-op-1GN" collectionClass="NSMutableArray" id="avc-vl-pz4"/>
+                        <outletCollection property="buttons" destination="Gfd-4p-uSe" collectionClass="NSMutableArray" id="S9T-mE-I5M"/>
+                        <outletCollection property="buttons" destination="Dus-kq-GLL" collectionClass="NSMutableArray" id="rfZ-JY-MEK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

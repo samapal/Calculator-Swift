@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBOutlet weak var myButtons: UIButton!
+    @IBOutlet var buttons: [UIButton]!
     var isZero=false
     @IBAction func BackSpace() {
         
