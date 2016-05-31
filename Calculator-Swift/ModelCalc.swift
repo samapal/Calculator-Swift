@@ -100,7 +100,9 @@ class CalculatorImplimantation {
     
     func backspace(isZero:Bool) -> Double {
         if history.count>=1 {
+            pending = nil
             switch isZero {
+                
             case true:
                 let result=history.last
                 accumulator = result!
