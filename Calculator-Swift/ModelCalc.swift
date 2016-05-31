@@ -93,14 +93,30 @@ class CalculatorImplimantation {
             accumulator = pending!.binaryfunction(pending!.firstOperand,accumulator)
             pending = nil
             history.append(accumulator)
+            print("accumulator = \(accumulator) count of results is \(history.count)")
             
         }
     }
     
-    func backspace() -> Double {
+    func backspace(isZero:Bool) -> Double {
         if history.count>=1 {
-           history.removeLast()
-            return history.last!
+            switch isZero {
+            case true:
+                let result=history.last
+                accumulator = result!
+                history.removeLast()
+            case false:
+                if history.count == 1 {
+                  history.removeLast()
+                 let result = 0.0
+                    accumulator = result
+                } else {
+                history.removeLast()
+                let result = history.last
+                    accumulator = result!}
+            }
+
+            return result
         } else { return 0.0}
         
     }

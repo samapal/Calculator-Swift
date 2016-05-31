@@ -26,18 +26,23 @@ class ViewController: UIViewController {
         
     }
 
-    
+    var isZero=false
     @IBAction func BackSpace() {
+        
+        print("isTheMiddleTyping \(isTheMiddleTyping)")
         if isTheMiddleTyping {
+            
             switch (calcdisplay.text!).characters.count {
             case 1:
                 displayValue = 0.0
                 isTheMiddleTyping=false
+                isZero = true
             default:
                 calcdisplay.text = String((calcdisplay.text!).characters.dropLast())
             }
-        } else if (displayValue == 0.0) {
-            displayValue = calculator.backspace()
+        } else  {
+            displayValue = calculator.backspace(isZero)
+            isZero=false
         }
     }
     
