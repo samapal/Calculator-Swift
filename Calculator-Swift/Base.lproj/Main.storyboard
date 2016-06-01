@@ -85,7 +85,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ib2-BB-rFv">
                                         <rect key="frame" x="0.0" y="145" width="560" height="63"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKK-61-1Rm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKK-61-1Rm">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="63"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -243,7 +243,7 @@
                                                     <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmk-Dy-jLm"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDX-2Q-W9D">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDX-2Q-W9D">
                                                 <rect key="frame" x="143" y="0.0" width="132" height="62"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -281,7 +281,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-6g-gLc">
                                         <rect key="frame" x="0.0" y="435" width="560" height="63"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4h-xl-qAh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4h-xl-qAh">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="63"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -292,7 +292,7 @@
                                                     <action selector="BackSpace" destination="BYZ-38-t0r" eventType="touchUpInside" id="CRb-5L-3Ns"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzn-dr-sHg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzn-dr-sHg">
                                                 <rect key="frame" x="143" y="0.0" width="132" height="63"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -303,7 +303,7 @@
                                                     <action selector="Clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="IS0-Fp-9Ch"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2td-Bt-hXZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2td-Bt-hXZ">
                                                 <rect key="frame" x="285" y="0.0" width="133" height="63"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="25"/>
@@ -314,7 +314,7 @@
                                                     <action selector="Save" destination="BYZ-38-t0r" eventType="touchUpInside" id="smu-7F-3fR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-C6-s0D">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-C6-s0D">
                                                 <rect key="frame" x="428" y="0.0" width="132" height="63"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="20"/>
@@ -330,7 +330,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-Tm-cyg">
                                         <rect key="frame" x="0.0" y="508" width="560" height="62"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dus-kq-GLL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dus-kq-GLL">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="62"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -341,7 +341,7 @@
                                                     <action selector="AddToMemory" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMw-EO-z1G"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-4p-uSe">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-4p-uSe">
                                                 <rect key="frame" x="143" y="0.0" width="132" height="62"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -352,7 +352,7 @@
                                                     <action selector="ExtractFromMemory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJx-CL-YaQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-op-1GN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-op-1GN">
                                                 <rect key="frame" x="285" y="0.0" width="133" height="62"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
@@ -363,7 +363,7 @@
                                                     <action selector="launchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFy-Cw-hqN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-bi-GdT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-bi-GdT">
                                                 <rect key="frame" x="428" y="0.0" width="132" height="62"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>

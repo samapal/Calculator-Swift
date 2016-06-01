@@ -131,9 +131,10 @@ class CalculatorImplimantation {
         var firstOperand: Double
         
     }
-    
+    //typealias may be name of certain type or groups/complicated type
     typealias PropertyList = AnyObject
     
+    // var program is AnyObject type
     var program:PropertyList {
         get {
             return internalProgram
