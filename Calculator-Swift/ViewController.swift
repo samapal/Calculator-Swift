@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        for but in buttons {
+   //         but.currentBackgroundImage = UIColor.clearColor()
+            but.layer.cornerRadius = 10
+            but.layer.borderWidth = 1
+            but.layer.borderColor = UIColor.blueColor().CGColor
+        }
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
     private var isTheMiddleTyping = false
     private var isDotPressed = false
     

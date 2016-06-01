@@ -26,7 +26,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IjO-dn-YxE">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="63"/>
-                                                <color key="backgroundColor" red="1" green="0.88276981081411943" blue="0.58896690885159297" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.87663085780000005" green="0.97714989539999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -317,7 +317,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-C6-s0D">
                                                 <rect key="frame" x="428" y="0.0" width="132" height="63"/>
                                                 <color key="backgroundColor" red="1" green="0.88276981080000005" blue="0.58896690890000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="20"/>
                                                 <state key="normal" title="restore">
                                                     <color key="titleShadowColor" red="1" green="0.89476254109999998" blue="0.86184210530000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
