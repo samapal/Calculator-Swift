@@ -1,4 +1,4 @@
-# Calculator-Swift
+# Calculator-Swift stanford 2016
 Based on Stanford University courses
 
 
